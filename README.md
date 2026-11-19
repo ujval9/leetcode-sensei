@@ -32,6 +32,7 @@ Fill in UMPIRE top to bottom, write the code, run `python3 <file>`.
 | `/interview` | Mock interview with a written feedback report |
 | `/pattern-mapper` | Teaches me to spot which pattern a problem uses |
 | `/log-session` | Saves progress (STATUS, log, weak patterns) and offers to commit |
+| `/syntax` | Python syntax for something you know how to do but forgot how to write (saves it to `progress/syntax-notes.md`; `/syntax quiz` to review) |
 
 Swift notes are automatic: when Python and Swift differ on something in the problem, Claude adds one line about it.
 

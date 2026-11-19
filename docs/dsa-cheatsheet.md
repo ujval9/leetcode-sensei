@@ -273,6 +273,86 @@ Always consider:
 
 ---
 
+## Python Basics Quick Syntax
+
+### Strings
+```python
+s = "hello"
+s[0], s[-1]          # 'h', 'o'      first / last character
+s[1:4]               # 'ell'         slice [start:end), end excluded
+s[:2], s[2:]         # 'he', 'llo'
+s[::-1]              # 'olleh'       reverse
+len(s)               # 5
+f"{s} has {len(s)}"  # f-string: 'hello has 5'
+f"{3.14159:.2f}"     # '3.14'        format a float
+s.upper(), s.lower(), s.strip(), s.replace("l", "L")
+s.split()            # split on whitespace -> list of words
+s.split(",")         # split on a separator
+" ".join(["a", "b"]) # 'a b'         list of strings -> one string
+s.isdigit(), s.isalpha(), s.isalnum(), c.isupper()
+"ell" in s           # True          substring check
+s.find("l")          # 2 (or -1 if not found);  s.index("l") raises if missing
+s.count("l")         # 2
+ord("a"), chr(97)    # 97, 'a'
+# Strings are immutable: build a list of chars, then "".join(chars)
+```
+
+### Input and output
+```python
+name = input("Name: ")          # always returns a str
+n = int(input())                # convert to int
+a, b = map(int, input().split())
+print("a", "b", sep="-")        # a-b
+print("no newline", end="")
+```
+
+### Lists
+```python
+nums = [3, 1, 2]
+nums.append(4); nums.pop(); nums.pop(0); nums.insert(0, 9)
+nums[-1], nums[-2:]              # last item, last two items
+sorted(nums)                     # new sorted list
+nums.sort(reverse=True)          # sorts in place, returns None
+sorted(words, key=len)           # sort by a key
+sorted(pairs, key=lambda p: (p[1], p[0]))
+nums[::-1]; list(reversed(nums))
+sum(nums), min(nums), max(nums)
+max(words, key=len)              # longest word
+[x * 2 for x in nums if x > 1]   # list comprehension
+[[0] * cols for _ in range(rows)]   # 2D grid (NOT [[0]*cols]*rows)
+for i, x in enumerate(nums): ...    # index and value
+for a, b in zip(list1, list2): ...  # pairs
+any(x > 2 for x in nums), all(...)
+nums.index(2), nums.count(2), 2 in nums
+```
+
+### Dictionaries and sets
+```python
+d = {"a": 1}
+d.get("z", 0)                    # 0 if key missing (no KeyError)
+d["b"] = d.get("b", 0) + 1       # count pattern
+for k, v in d.items(): ...
+list(d.keys()), list(d.values())
+d.setdefault("k", []).append(5)
+seen = set(); seen.add(3); 3 in seen
+a & b, a | b, a - b              # set intersection, union, difference
+```
+
+### Numbers and logic
+```python
+7 // 2, 7 % 2, 2 ** 3            # 3, 1, 8
+-7 // 2                          # -4 (floors toward negative infinity)
+abs(-3), round(2.567, 2)
+float("inf"), float("-inf")
+x = a if cond else b             # ternary
+a, b = b, a                      # swap
+for i in range(5)            # 0..4
+for i in range(2, 10, 2)     # 2, 4, 6, 8
+for i in range(n - 1, -1, -1)  # n-1 down to 0
+```
+
+---
+
 ## Python Built-ins Quick Reference
 
 ### Collections

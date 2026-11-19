@@ -14,6 +14,7 @@ Claude Code starts every session fresh. Memory lives in files that are committed
 - `progress/learner-profile.md`: who they are and how they learn. Read at the start of a session.
 - `progress/weak-patterns.md`: patterns that gave trouble and the exact sticking point.
 - `progress/log.md`: one row per attempt.
+- `progress/syntax-notes.md`: Python syntax the learner looked up (for spaced review).
 - `progress/TIP102.md` and `TIP102/README.md`: generated from the `# STATUS:` line in each problem file. Never edit them by hand; rerun `python3 tools/progress.py`.
 - At the end of a problem or session, use the `log-session` skill to write all of this, then offer to commit and push.
 Only record what actually happened. Never invent results, scores, or hint levels.
@@ -36,6 +37,7 @@ Detect the mode from the request and load the matching skill from `.claude/skill
 | Pattern Mapper | `/pattern-mapper` | "what pattern is this?", "which technique?" |
 | Next problem | `/next` | "what next?", "give me a problem", session start with no task |
 | Log session | `/log-session` | "log this", "save progress", "done for today" |
+| Syntax | `/syntax` | "how do I write X in Python", "what's the syntax", "I forgot how to" (syntax only, never the solution) |
 | Swift notes | (automatic) | add a one-line Swift difference when relevant |
 
 ## Repo layout
