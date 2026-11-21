@@ -8,7 +8,7 @@ Refresh with `python3 tools/progress.py` (runs automatically when Claude Code st
 
 **Session 1, Problem Set Version 1**
 
-- [ ] 1. [Hundred Acre Wood](Week_01/Session_1/Problem_Set_Version_1/01_Hundred_Acre_Wood.py)
+- [x] 1. [Hundred Acre Wood](Week_01/Session_1/Problem_Set_Version_1/01_Hundred_Acre_Wood.py)
 - [ ] 2. [Greeting](Week_01/Session_1/Problem_Set_Version_1/02_Greeting.py)
 - [ ] 3. [Catchphrase](Week_01/Session_1/Problem_Set_Version_1/03_Catchphrase.py)
 - [ ] 4. [Return Item](Week_01/Session_1/Problem_Set_Version_1/04_Return_Item.py)

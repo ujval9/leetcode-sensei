@@ -1,0 +1,20 @@
+{
+  // AI / ghost-text suggestions off for this practice repo
+  "github.copilot.enable": {
+    "*": false
+  },
+  "editor.inlineSuggest.enabled": false,
+
+  // IntelliSense popup off (delete these 3 settings if you want it back)
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+
+  // Still useful while practicing
+  "editor.parameterHints.enabled": true,
+  "editor.acceptSuggestionOnEnter": "off"
+}

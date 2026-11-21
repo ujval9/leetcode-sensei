@@ -23,7 +23,7 @@ Example Output:
  Welcome to The Hundred Acre Wood!
 """
 
-# STATUS: not started    (not started | in progress | solved | solved with help)
+# STATUS: solved    (not started | in progress | solved | solved with help)
 
 """
 UNDERSTAND:
@@ -38,19 +38,22 @@ UNDERSTAND:
 MATCH:    * similar problems?
 
 PLAN
-1.
+1.remove the pass in the function def welcome() , I dont know if you need to define the return type in python or it reads in your own. so i woud just write a print statement and string in that and it would display that.
 
 IMPLEMENT:
--
-
+def welcome():
+    print("Welcome to The Hundred Acre Wood!")
 REVIEW:
 
-
+I will it would work out for all edged cases as you just call the function and dont pass anything. 
 EVALUATE:
     * runtime and complexity?
-
+The time complexity would O(1) as its just a print
 
 """
 
 def welcome():
-    pass
+    print("Welcome to The Hundred Acre Wood!")
+
+if __name__ == "__main__":
+    welcome()
