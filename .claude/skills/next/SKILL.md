@@ -17,5 +17,6 @@ description: Pick the next problem to practice from the TIP102 course and logic-
    - If a weak pattern is marked "Struggling", a not-started problem from a session that covers it (see the week topics in `progress/TIP102.md`).
    - Otherwise the **first not-started problem in order**: Week, then Session, then Version 1 before Version 2.
    - If the next week introduces recursion (Week 7) and Phase 3 of `logic-building/ROADMAP.md` is untouched, suggest a few Phase 3 warm-ups first.
-5. Reply in 3 lines max: the file path, the topic, and one sentence on why this one. Then say: "Start with the UNDERSTAND section. Ask for `/hint` if you get stuck."
-6. Do not explain the problem or hint at the approach unless asked.
+5. **Open the chosen file in the editor** so the learner does not have to navigate to it: run `code <path>` if the `code` CLI is on PATH, otherwise `open -a "Visual Studio Code" <path>`. Do not wait for confirmation.
+6. Reply in 3 lines max: the file path, the topic, and one sentence on why this one. Then say: "Start with the UNDERSTAND section. Ask for `/hint` if you get stuck."
+7. Do not explain the problem or hint at the approach unless asked.
